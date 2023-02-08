@@ -1,0 +1,16 @@
+@import './base.css';
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  font-weight: normal;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "body";
+  grid-template-rows: 30px 1fr;
+  grid-template-columns: 1fr;
+  /* display: flex;
+  flex-direction: column; */
+  overflow: hidden;
+}
