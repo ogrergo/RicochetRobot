@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  client:
+    build:
+      context: client
+    depends_on:
+      - nginx
+      # ports:
+      # - "8001:3000"
+    restart: always
+  server:
+    build:
+      context: server
+    depends_on:
+      - nginx
+    # ports:
+    #   - "8000:8000"
+    restart: always
+  nginx:
+    build:
+      context: nginx
+    ports:
+      - "80:80"
+    restart: always
