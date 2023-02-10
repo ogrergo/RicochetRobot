@@ -11,7 +11,7 @@ services:
     restart: always
   server:
     build:
-      context: server
+      context: server 
     depends_on:
       - nginx
     # ports:
